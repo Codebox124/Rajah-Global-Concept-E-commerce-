@@ -4,14 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
   <title>Rajah Global Concept</title>
 </head>
 <body class="">
-  
 
- 
-  
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog relative w-auto pointer-events-none">
+<div
+class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+<div
+  class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+  <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Description</h5>
+  <button type="button"
+    class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+    data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body relative p-4 flex">
+ <div>
+  <img src="/asset/Rectangle 1.png" alt="">
+ </div>
+ <div>
+  <h2 class="text-xl text-gray-700">Inalsa Air Fryer Fry-Light-1400W</h2>
+ </div>
+</div>
+<div
+  class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+  <button type="button" class="px-6
+    py-2.5
+    bg-purple-600
+    text-white
+    font-medium
+    text-xs
+    leading-tight
+    uppercase
+    rounded
+    shadow-md
+    hover:bg-purple-700 hover:shadow-lg
+    focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0
+    active:bg-purple-800 active:shadow-lg
+    transition
+    duration-150
+    ease-in-out" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="px-6
+py-2.5
+bg-blue-600
+text-white
+font-medium
+text-xs
+leading-tight
+uppercase
+rounded
+shadow-md
+hover:bg-blue-700 hover:shadow-lg
+focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+active:bg-blue-800 active:shadow-lg
+transition
+duration-150
+ease-in-out
+ml-1">Get Product</button>
+</div>
+</div>
+</div>
+</div>
   
   <div class="max-w-6xl mx-auto px-7">
     <!-- Header -->
@@ -74,47 +135,23 @@
       </div>
 
       <div class="grid grid-cols-3 gap-9 my-4">
-        <div id="myBtn">
+        <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div>
             <img src="/asset/Rectangle 1.png" alt="">
           </div>
-          <div class="">
-            <div>
-              <span id="" class="font-semibold">Inalsa Air Fryer Fry-Light-1400W</span>
-            </div>
-            <div class="flex mt-4  font-semibold">
-              <div class="grow">
-                <span>$220</span>
-              </div>
-              <div class="">
-                <span class="text-red-500">-40% off</span>
-              </div>
-
-            </div>
-
-          </div>
+          
+            
+          
           
         </div>
 
-        <div id="myBtn">
+        <div id="">
           <div>
             <img src="/asset/Rectangle 1 (1).png" alt="">
           </div>
-          <div class="">
-            <div>
-              <span class="font-semibold">Oneplus Bullets Z2 Bluetooth Wireless</span>
-            </div>
-            <div class="flex mt-4  font-semibold">
-              <div class="grow">
-                <span>$30</span>
-              </div>
-              <div class="">
-                <span class="text-red-500">-10% off</span>
-              </div>
-
-            </div>
-
-          </div>
+          
+            
+          
           
         </div>
 
@@ -122,21 +159,9 @@
           <div>
             <img src="/asset/Rectangle 1 (2).png" alt="">
           </div>
-          <div class="">
-            <div>
-              <span class="font-semibold">New Fastrack Reflex Play|AMOLED Display</span>
-            </div>
-            <div class="flex mt-4  font-semibold">
-              <div class="grow">
-                <span>$500</span>
-              </div>
-              <div class="">
-                <span class="text-red-500">-20% off</span>
-              </div>
-
-            </div>
-
-          </div>
+          
+            
+          
           
         </div>
 
@@ -484,5 +509,6 @@
 
 <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 <script src="/src/index.js"></script>  
+<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
