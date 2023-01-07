@@ -6,7 +6,7 @@ const passwordCheck = document.querySelector("#password2");
 function checkInput() {
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
-  const paswordValue = password.value.trim();
+  const passwordValue = password.value.trim();
  const passwordCheckValue = passwordCheck.value.trim();
 //  validation for name
   if (nameValue === "") {
@@ -25,6 +25,24 @@ else if(!isEmail(emailValue)){
 }
 else{
   success(email)
+}
+if(passwordValue === ''){
+  errorMsg(password, "Password cannot be empty")
+}
+else if(passwordValue.length < 8){
+  errorMsg(password, "Atleast eight characters")
+}
+else{
+  success(password)
+}
+if(passwordCheckValue === ''){
+  errorMsg(passwordCheck, "Password cannot be empty")
+}
+else if (passwordCheckValue !== passwordValue){
+  errorMsg(passwordCheck, "Password mismatch")
+}
+else{
+  success(passwordCheck)
 }
 
 }
