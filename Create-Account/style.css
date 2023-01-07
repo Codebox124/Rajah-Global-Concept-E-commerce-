@@ -78,6 +78,7 @@ body {
     font-family: inherit;
     border-radius: 4px;
     font-size: 16px;
+    cursor: pointer;
 }
 .form-control.success input{
   border-color: #2ecc71;
