@@ -1,0 +1,21 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "iPhone 9",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549,
+        "image":"/asset/Rectangle 1.png"
+      
+      },
+      {
+        "id": 2,
+        "title": "iPhone 9",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549
+      }
+      
+    ]
+  
+  }
+             
